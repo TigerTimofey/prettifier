@@ -10,6 +10,7 @@
 ⚙️ [Tool functionality](#⚙️-tool-functionality)<br/>
 ❔ [Error handling](#❔-error-handling)<br/>
 🛠️ [Testing Requirements](#🛠️-testing-requirements)<br/>
+☕ [Version](#☕-version)<br/>
 🤝 [Creator](🤝-Creator)
 
 ## 🚀 What does the tool do?
@@ -76,17 +77,16 @@ $ java Prettifier.java -h
 
 ## ❔ Error handling
 
-- If the input file does not exist, the output will show: **`Input not found`**.
-- If the airport lookup file does not exist, the output will show: **`Airport lookup not found`**.
-- If the airport data is malformed (e.g., missing columns or blank cells), the output will show: **`Airport lookup malformed`**.
-
-In any case of an error, the output file will not be created or overwritten.
+- If the input file does not exist, the output will show: _`Input not found`_.
+- If the airport lookup file does not exist, the output will show: _`Airport lookup not found`_.
+- If the airport data is malformed (e.g., missing columns or blank cells), the output will show: _`Airport lookup malformed`_.
+- In any case of an error, the output file will not be created or overwritten.
 
 ## 🛠️ Testing Requirements
 
 ### 1. **ISO Dates and Times**:
 
-Create an input file with the following lines:
+- Create an input file with the following lines:
 
 ```bash
 1. D(2022-05-09T08:07Z)
@@ -116,13 +116,13 @@ Create an input file with the following lines:
 
 ### 2. **Converting IATA and ICAO codes to airport names**:
 
-Create a file containing the text:
+- Create a file containing the text:
 
 ```bash
 Your flight departs from #HAJ, and your destination is ##EDDW.
 ```
 
-Run the program, check the content of the output file. It should contain:
+- Run the program, check the content of the output file. It should contain:
 
 ```bash
 Your flight departs from Hannover Airport, and your destination is Bremen Airport.
@@ -140,6 +140,10 @@ Your flight departs from Hannover Airport, and your destination is Bremen Airpor
 - Non-Standard Column Order: Test the tool's ability to handle arbitrary airport lookup column orders.
 - Bonus Features: Showcase any extra features, like color formatting, highlighting timezone offsets and -o flag.
 
+## ☕ Version
+
+- Java 21.0.4 2024-07-16 LTS
+
 ## 🤝 Creator
 
-⋅ Timofey Babisashvili <br/>
+- Timofey Babisashvili <br/>
