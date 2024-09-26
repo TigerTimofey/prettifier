@@ -21,37 +21,37 @@ The Itinerary Prettifier is a tool that formats flight itineraries to make them 
 
 To use the tool, run the program with these three inputs:
 
-Path to the input itinerary file.
-Path to the output file for the formatted itinerary.
-Path to the airport lookup CSV file.
+1. Path to the input itinerary file.
+2. Path to the output file for the formatted itinerary.
+3. Path to the airport lookup CSV file.
 
 ### Example usage:
 
-Git clone repository:
+- Clone Github repository:
 
 ```bash
 $ git clone https://gitea.kood.tech/codewithtim/itinerary
 ```
 
-Move to folder:
+- Move to project folder:
 
 ```bash
 $ cd itinerary
 ```
 
-To run code:
+- Run code:
 
 ```bash
 $ java Prettifier.java ./input.txt ./output.txt ./airports_lookup.csv
 ```
 
-To run code and show output.txt in console:
+- Run code and show output.txt in console:
 
 ```bash
 $ java Prettifier.java -o ./input.txt ./output.txt ./airports_lookup.csv
 ```
 
-To display usage information, run:
+- Display usage information, run:
 
 ```bash
 $ java Prettifier.java -h
