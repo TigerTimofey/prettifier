@@ -20,6 +20,7 @@ public class GetCityName {
                         input = input.replace(code, values[indexesCSV.get("municipality")]);
                     }
                 }
+                reader.close();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -15,7 +15,7 @@ public class ReadFile {
                 fileContent = fileContent.concat(String.valueOf((char) data));
                 data = reader.read();
             }
-
+            reader.close();
             return fileContent;
         } catch (IOException e) {
             throw new RuntimeException(e);

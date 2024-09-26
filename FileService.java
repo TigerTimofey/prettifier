@@ -7,7 +7,6 @@ import airport.GetCityName;
 import airport.GetIndexesFromCSV;
 import file.FormatInput;
 import file.ReadFile;
-import file.WriteOutput;
 import date.FormatDataAndTime;
 
 public class FileService {
@@ -32,14 +31,13 @@ public class FileService {
     }
 
     public Map<String, Integer> getIndexesFromCSV(String airportLookup) {
-        GetIndexesFromCSV getIndexesFromCSV = new GetIndexesFromCSV(); // Создаем объект класса GetIndexesFromCSV
-        return getIndexesFromCSV.getIndexesFromCSV(airportLookup); // Вызываем метод getIndexesFromCSV
+        GetIndexesFromCSV getIndexesFromCSV = new GetIndexesFromCSV();
+        return getIndexesFromCSV.getIndexesFromCSV(airportLookup);
     }
 
     public String getAirportName(String airportLookup, String input, List<String> codes,
             Map<String, Integer> indexesCSV, String typeCSVIndex) {
         GetAirportName getAirportName = new GetAirportName();
-
         return getAirportName.getAirportName(airportLookup, input, codes, indexesCSV, typeCSVIndex);
     }
 

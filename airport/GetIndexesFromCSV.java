@@ -30,11 +30,11 @@ public class GetIndexesFromCSV {
                         case "coordinates" -> indexes.put("coordinates", i);
                     }
                 }
+                reader.close();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
         return indexes;
     }
 

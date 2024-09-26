@@ -20,6 +20,7 @@ public class GetAirportName {
                         input = input.replace(code, values[indexesCSV.get("name")]);
                     }
                 }
+                reader.close();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
