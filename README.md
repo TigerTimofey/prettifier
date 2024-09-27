@@ -4,20 +4,20 @@
 
 ## Table of contents
 
-🚀 [What does the tool do?](#🚀-what-does-the-tool-do)<br/>
-💡 [How to start using the tool](#💡-how-to-start-using-the-tool)<br/>
-💾 [How the data is processed](#💾-how-the-data-is-processed)<br/>
-⚙️ [Tool functionality](#⚙️-tool-functionality)<br/>
-❔ [Error handling](#❔-error-handling)<br/>
-🛠️ [Testing Requirements](#🛠️-testing-requirements)<br/>
-☕ [Version](#☕-version)<br/>
-🤝 [Creator](🤝-Creator)
+🚀 [What does the tool do?](#what-does-the-tool-do)<br/>
+💡 [How to start using the tool](#how-to-start-using-the-tool)<br/>
+💾 [How the data is processed](#how-the-data-is-processed)<br/>
+⚙️ [Tool functionality](#tool-functionality)<br/>
+❔ [Error handling](#error-handling)<br/>
+🛠️ [Testing Requirements](#testing-requirements)<br/>
+☕ [Version](#version)<br/>
+🤝 [Creator](#creator)
 
-## 🚀 What does the tool do?
+## What does the tool do?
 
 The Itinerary Prettifier is a tool that formats flight itineraries to make them easier to read and saves the result in a new file, helping staff quickly prepare neat versions for customers.
 
-## 💡 How to start using the tool
+## How to start using the tool
 
 To use the tool, run the program with these three inputs:
 
@@ -57,7 +57,7 @@ $ java Prettifier.java -o ./input.txt ./output.txt ./airports_lookup.csv
 $ java Prettifier.java -h
 ```
 
-## 💾 How the data is processed
+## How the data is processed
 
 - Airport Code Conversion: Converts IATA and ICAO codes into airport names using a CSV file. If a code isn't found, it's left unchanged.
 
@@ -68,21 +68,21 @@ $ java Prettifier.java -h
 
 - Whitespace Trimming: Removes extra blank spaces, ensuring no more than two consecutive empty lines.
 
-## ⚙️ Tool functionality
+## Tool functionality
 
 - Reads itineraries from text files and saves improved versions to new files.
 - Looks up airport codes using a flexible CSV file, allowing different column arrangements.
 - Supports both IATA and ICAO codes, and recognizes city names marked with an asterisk(\*).
 - Formats dates and times for easier reading.
 
-## ❔ Error handling
+## Error handling
 
 - If the input file does not exist, the output will show: _`Input not found`_.
 - If the airport lookup file does not exist, the output will show: _`Airport lookup not found`_.
 - If the airport data is malformed (e.g., missing columns or blank cells), the output will show: _`Airport lookup malformed`_.
 - In any case of an error, the output file will not be created or overwritten.
 
-## 🛠️ Testing Requirements
+## Testing Requirements
 
 ### 1. **ISO Dates and Times**:
 
@@ -140,10 +140,10 @@ Your flight departs from Hannover Airport, and your destination is Bremen Airpor
 - Non-Standard Column Order: Test the tool's ability to handle arbitrary airport lookup column orders.
 - Bonus Features: Showcase any extra features, like color formatting, highlighting timezone offsets and -o flag.
 
-## ☕ Version
+## Version
 
 - Java 21.0.4 2024-07-16 LTS
 
-## 🤝 Creator
+## Creator
 
 - Timofey Babisashvili <br/>
