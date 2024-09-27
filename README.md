@@ -42,13 +42,13 @@ $ cd itinerary
 - Run code:
 
 ```bash
-$ java Prettifier.java ./input.txt ./output.txt ./airports_lookup.csv
+$ java Prettifier.java ./input.txt ./output.txt ./airport-lookup.csv
 ```
 
 - Run code and show output.txt in console:
 
 ```bash
-$ java Prettifier.java -o ./input.txt ./output.txt ./airports_lookup.csv
+$ java Prettifier.java -o ./input.txt ./output.txt ./airport-lookup.csv
 ```
 
 - Display usage information, run:
